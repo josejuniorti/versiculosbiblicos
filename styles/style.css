@@ -1,0 +1,112 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    transition:all 1s;
+}
+body {background-color:rgb(51, 37, 0);}
+.header {
+    padding:20px;
+}
+.header h1 {
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.5rem;
+    color:rgb(184, 156, 0);
+}
+main {
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .secbtn {
+    padding-top:20px;
+}
+main .secbtn button {
+    background-color: transparent;
+    color:rgb(184, 156, 0);
+    border: none;
+    width:300px;
+    height:50px;
+    font-size: 1.5rem;
+    font-family: 'Philosopher', sans-serif;    
+    text-transform: uppercase;
+    cursor: pointer;
+    border-left:solid 5px rgb(88, 72, 0);
+    border-right:solid 5px rgb(88, 72, 0);
+}
+.secbtn button:hover {
+    width:270px;
+}
+main .secver {
+    width:90%;
+    height:70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+}
+main .secver #versiculo {
+    font-family: 'Philosopher', sans-serif;    
+    font-size:2rem;
+    text-align: center;
+    color:rgb(207, 207, 207);
+    padding:20px;
+    border-top:solid 5px rgb(88, 72, 0);
+    border-bottom:solid 5px rgb(88, 72, 0);
+}
+
+@media screen and (max-width:600px) {
+    main .secver #versiculo {
+        font-size: 1.70rem;
+    }
+    .header h1 {
+        font-size: 1rem;
+    }
+    main .secbtn button {
+        font-size: 1rem;
+        width:230px;
+    }
+    main .secbtn button:hover {
+        width:200px;
+    }
+}
+@media screen and (max-width:400px) {
+    main .secver #versiculo {
+        font-size: 1.3rem;
+    }
+    .header h1 {
+        font-size: 0.8rem;
+    }
+    main .secbtn button {
+        font-size: 0.8rem;
+        width:200px;
+    }
+    main .secbtn button:hover {
+        width:170px;
+    }
+}
+
+@media screen and (max-width:290px) {
+    main .secver {
+        width:100%;
+        padding:10px;
+    }    
+    main .secver #versiculo {
+        font-size: 1rem;
+        text-align: justify;
+    }
+    .header h1 {
+        font-size: 0.7rem;
+    }
+    main .secbtn button {
+        font-size: 0.7rem;
+        width:140px;
+    }
+    main .secbtn button:hover {
+        width:140px;
+    }
+}
